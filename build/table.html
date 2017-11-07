@@ -20,7 +20,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
     <!-- Template Basic Images End -->
     <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" media="all" href="css/app.css"> </head>
 
   <body>
@@ -32,22 +32,23 @@
           <div class="header__logo"> <a href="index.html" class="header__logo-link"><img src="img/logo.png" alt="Treeium"></a> </div>
           <h1 class="header__title"> Sales Portal/<span class="bold-text">Beta v2.0</span> </h1>
         </div>
-        <div class="header__navbar">
+        <div class="header__navbar" id="headerNavbar">
           <div class="header__notification"> <a href="#" class="navbar__inbox navbar__item">
         <span class="navbar__icon">
-          <span class="navbar__circle navbar__circle--green">9</span> 
+           
 <svg class="icon icon-email"><use xlink:href="img/sprite.svg#icon-email"></use></svg>
 
         </span>
         <span class="navbar__text">Inbox</span>
+        <span class="navbar__circle navbar__circle--green">9</span>
       </a> <a href="#" class="navbar__alert navbar__item">
         <span class="navbar__icon">
-            <span class="navbar__circle navbar__circle--red">2</span> 
+            
 <svg class="icon icon-alert"><use xlink:href="img/sprite.svg#icon-alert"></use></svg>
 
         </span>
         <span class="navbar__text">Your Alert</span>
-
+        <span class="navbar__circle navbar__circle--red">2</span>
       </a> </div>
           <div class="navbar__account navbar__item">
             <div class="account__avatar"> <img src="img/user-avatar.png" alt="User"> </div>
@@ -57,10 +58,89 @@
           <span>
 <svg class="icon icon-settings"><use xlink:href="img/sprite.svg#icon-settings"></use></svg>
 </span>
-        </a> </div> <a href="#" class="navbar__turn-on">
+        </a> </div>
+          </div>
+          <div class="navbar__menu"> <a href="#" class="navbar__item">
+        <span class="navbar__icon">
+          
+<svg class="icon icon-blue-tv"><use xlink:href="img/sprite.svg#icon-blue-tv"></use></svg>
+
+        </span>
+        <span class="navbar__text">New Proposal</span>
+        <span class="navbar__circle navbar__circle--seafoam"></span>
+      </a>
+            <!-- next link --><a href="#" class="navbar__item">
+        <span class="navbar__icon">
+          
+<svg class="icon icon-blue-adden"><use xlink:href="img/sprite.svg#icon-blue-adden"></use></svg>
+
+        </span>
+        <span class="navbar__text">New Addendum</span>
+        <span class="navbar__circle navbar__circle--seafoam"></span>
+      </a>
+            <!-- next link --><a href="#" class="navbar__item">
+        <span class="navbar__icon">
+          
+<svg class="icon icon-blue-list"><use xlink:href="img/sprite.svg#icon-blue-list"></use></svg>
+
+        </span>
+        <span class="navbar__text">Partial Totals</span>
+        <span class="navbar__circle navbar__circle--seafoam"></span>
+      </a>
+            <!-- next link --><a href="#" class="navbar__item">
+        <span class="navbar__icon">
+          
+<svg class="icon icon-blue-comment"><use xlink:href="img/sprite.svg#icon-blue-comment"></use></svg>
+
+        </span>
+        <span class="navbar__text">Comments</span>
+        <span class="navbar__circle navbar__circle--seafoam"></span>
+      </a>
+            <!-- next link --><a href="#" class="navbar__item">
+        <span class="navbar__icon">
+          
+<svg class="icon icon-email"><use xlink:href="img/sprite.svg#icon-email"></use></svg>
+
+        </span>
+        <span class="navbar__text">Emails</span>
+        <span class="navbar__circle navbar__circle--seafoam"></span>
+      </a>
+            <!-- next link --><a href="#" class="navbar__item">
+        <span class="navbar__icon">
+          
+<svg class="icon icon-calendar"><use xlink:href="img/sprite.svg#icon-calendar"></use></svg>
+
+        </span>
+        <span class="navbar__text">Appointments</span>
+        <span class="navbar__circle navbar__circle--seafoam">2</span>
+      </a>
+            <!-- next link --><a href="#" class="navbar__item">
+        <span class="navbar__icon">
+          
+<svg class="icon icon-blue-adden"><use xlink:href="img/sprite.svg#icon-blue-adden"></use></svg>
+
+        </span>
+        <span class="navbar__text">Calls</span>
+        <span class="navbar__circle navbar__circle--seafoam"></span>
+      </a>
+            <!-- next link --><a href="#" class="navbar__item">
+        <span class="navbar__icon">
+          
+<svg class="icon icon-blue-adden"><use xlink:href="img/sprite.svg#icon-blue-adden"></use></svg>
+
+        </span>
+        <span class="navbar__text">Journal </span>
+        <span class="navbar__circle navbar__circle--seafoam"></span>
+      </a> </div>
+          <div class="navbar__item navbar__logout"> <span class="navbar__logo-mini">
+<svg class="icon icon-logo-mini"><use xlink:href="img/sprite.svg#icon-logo-mini"></use></svg>
+</span> <a href="#" class="navbar__turn-on"><span class="navbar__text">Logout</span>
 <svg class="icon icon-turn-on"><use xlink:href="img/sprite.svg#icon-turn-on"></use></svg>
 </a> </div>
         </div>
+        <a href="#" id="touch-menu">
+          <div id="nav-icon1"> <span></span> <span></span> <span></span> </div>
+        </a>
       </header>
       <!-- end header -->
       <div class="tablepage">
@@ -75,9 +155,6 @@
 
           </a>
                 <div class="secondmenu"> <a href="#" class="secondmenu__title">
-              <span class="chevron">
-<svg class="icon icon-chevron-right"><use xlink:href="img/sprite.svg#icon-chevron-right"></use></svg>
-</span>
               <span>Projects</span>
             </a>
                   <ul class="secondmenu__list">
@@ -96,9 +173,6 @@
 
           </a>
                 <div class="secondmenu"> <a href="#" class="secondmenu__title">
-              <span class="chevron">
-<svg class="icon icon-chevron-right"><use xlink:href="img/sprite.svg#icon-chevron-right"></use></svg>
-</span>
               <span>Proposal Manager</span>
             </a>
                   <ul class="secondmenu__list">
@@ -117,9 +191,6 @@
 
               </a>
                 <div class="secondmenu"> <a href="#" class="secondmenu__title">
-              <span class="chevron">
-<svg class="icon icon-chevron-right"><use xlink:href="img/sprite.svg#icon-chevron-right"></use></svg>
-</span>
               <span>Reports Dashboards</span>
             </a>
                   <ul class="secondmenu__list">
@@ -138,9 +209,6 @@
 
                 </a>
                 <div class="secondmenu"> <a href="#" class="secondmenu__title">
-              <span class="chevron">
-<svg class="icon icon-chevron-right"><use xlink:href="img/sprite.svg#icon-chevron-right"></use></svg>
-</span>
               <span>Agenda</span>
             </a>
                   <ul class="secondmenu__list">
@@ -159,9 +227,6 @@
 
                 </a>
                 <div class="secondmenu"> <a href="#" class="secondmenu__title">
-              <span class="chevron">
-<svg class="icon icon-chevron-right"><use xlink:href="img/sprite.svg#icon-chevron-right"></use></svg>
-</span>
               <span>Maps</span>
             </a>
                   <ul class="secondmenu__list">
@@ -180,9 +245,6 @@
 
                 </a>
                 <div class="secondmenu"> <a href="#" class="secondmenu__title">
-              <span class="chevron">
-<svg class="icon icon-chevron-right"><use xlink:href="img/sprite.svg#icon-chevron-right"></use></svg>
-</span>
               <span>Schedule</span>
             </a>
                   <ul class="secondmenu__list">
@@ -206,7 +268,7 @@
               <div class="tabs">
                 <div class="tabbed">
                   <ul>
-                    <h2 class="table__title">Proposal Manager</h2>
+                    <h3 class="table__title">Proposal Manager</h3>
                     <li> <a href="#section1" class="tabs__link">Follow Up</a> </li>
                     <li> <a href="#section2" class="tabs__link">Favorites </a> </li>
                     <li> <a href="#section3" class="tabs__link">Massive Mail</a> </li>
@@ -756,15 +818,10 @@
           </div>
         </main>
         <!-- end main -->
-        <!-- begin footer  -->
-        <footer class="footer"> </footer>
-        <!-- end footer -->
       </div>
     </div>
     <!-- END WRAPPER -->
     <!-- BEGIN scripts -->
-    <!-- Pictures lazy load -->
-    <!-- main -->
     <script async src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script async src="js/app.js"></script>
   </body>

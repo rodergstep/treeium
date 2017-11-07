@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Treeium</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Template Basic Images Start -->
+    <meta property="og:title" content="Treeium">
+    <meta property="og:image" content="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Template Basic Images End -->
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="css/app.css"> </head>
+
+  <body>
+    <!-- BEGIN WRAPER -->
+    <div class="wrapper">
+      <!-- begin header -->
+      <header class="header">
+        <div class="header__left">
+          <div class="header__logo"> <a href="index.html" class="header__logo-link"><img src="img/logo.png" alt="Treeium"></a> </div>
+          <h1 class="header__title"> Sales Portal/<span class="bold-text">Beta v2.0</span> </h1>
+        </div>
+        <div class="header__navbar" id="headerNavbar">
+          <div class="header__notification"> <a href="#" class="navbar__inbox navbar__item">
+        <span class="navbar__icon">
+           
+<svg class="icon icon-email"><use xlink:href="img/sprite.svg#icon-email"></use></svg>
+
+        </span>
+        <span class="navbar__text">Inbox</span>
+        <span class="navbar__circle navbar__circle--green">9</span>
+      </a> <a href="#" class="navbar__alert navbar__item">
+        <span class="navbar__icon">
+            
+<svg class="icon icon-alert"><use xlink:href="img/sprite.svg#icon-alert"></use></svg>
+
+        </span>
+        <span class="navbar__text">Your Alert</span>
+        <span class="navbar__circle navbar__circle--red">2</span>
+      </a> </div>
+          <div class="navbar__account navbar__item">
+            <div class="account__avatar"> <img src="img/user-avatar.png" alt="User"> </div>
+            <div class="account__box">
+              <div class="account__hello"> Hi <span class="account__name">Paul Dresden</span> </div> <a href="#" class="account__link">
+          <span class="navbar__text">MY ACCOUNT</span>
+          <span>
+<svg class="icon icon-settings"><use xlink:href="img/sprite.svg#icon-settings"></use></svg>
+</span>
+        </a> </div>
+          </div>
+          <div class="navbar__menu"> <a href="#" class="navbar__item">
+        <span class="navbar__icon">
+          
+<svg class="icon icon-blue-tv"><use xlink:href="img/sprite.svg#icon-blue-tv"></use></svg>
+
+        </span>
+        <span class="navbar__text">New Proposal</span>
+        <span class="navbar__circle navbar__circle--seafoam"></span>
+      </a>
+            <!-- next link --><a href="#" class="navbar__item">
+        <span class="navbar__icon">
+          
+<svg class="icon icon-blue-adden"><use xlink:href="img/sprite.svg#icon-blue-adden"></use></svg>
+
+        </span>
+        <span class="navbar__text">New Addendum</span>
+        <span class="navbar__circle navbar__circle--seafoam"></span>
+      </a>
+            <!-- next link --><a href="#" class="navbar__item">
+        <span class="navbar__icon">
+          
+<svg class="icon icon-blue-list"><use xlink:href="img/sprite.svg#icon-blue-list"></use></svg>
+
+        </span>
+        <span class="navbar__text">Partial Totals</span>
+        <span class="navbar__circle navbar__circle--seafoam"></span>
+      </a>
+            <!-- next link --><a href="#" class="navbar__item">
+        <span class="navbar__icon">
+          
+<svg class="icon icon-blue-comment"><use xlink:href="img/sprite.svg#icon-blue-comment"></use></svg>
+
+        </span>
+        <span class="navbar__text">Comments</span>
+        <span class="navbar__circle navbar__circle--seafoam"></span>
+      </a>
+            <!-- next link --><a href="#" class="navbar__item">
+        <span class="navbar__icon">
+          
+<svg class="icon icon-email"><use xlink:href="img/sprite.svg#icon-email"></use></svg>
+
+        </span>
+        <span class="navbar__text">Emails</span>
+        <span class="navbar__circle navbar__circle--seafoam"></span>
+      </a>
+            <!-- next link --><a href="#" class="navbar__item">
+        <span class="navbar__icon">
+          
+<svg class="icon icon-calendar"><use xlink:href="img/sprite.svg#icon-calendar"></use></svg>
+
+        </span>
+        <span class="navbar__text">Appointments</span>
+        <span class="navbar__circle navbar__circle--seafoam">2</span>
+      </a>
+            <!-- next link --><a href="#" class="navbar__item">
+        <span class="navbar__icon">
+          
+<svg class="icon icon-blue-adden"><use xlink:href="img/sprite.svg#icon-blue-adden"></use></svg>
+
+        </span>
+        <span class="navbar__text">Calls</span>
+        <span class="navbar__circle navbar__circle--seafoam"></span>
+      </a>
+            <!-- next link --><a href="#" class="navbar__item">
+        <span class="navbar__icon">
+          
+<svg class="icon icon-blue-adden"><use xlink:href="img/sprite.svg#icon-blue-adden"></use></svg>
+
+        </span>
+        <span class="navbar__text">Journal </span>
+        <span class="navbar__circle navbar__circle--seafoam"></span>
+      </a> </div>
+          <div class="navbar__item navbar__logout"> <span class="navbar__logo-mini">
+<svg class="icon icon-logo-mini"><use xlink:href="img/sprite.svg#icon-logo-mini"></use></svg>
+</span> <a href="#" class="navbar__turn-on"><span class="navbar__text">Logout</span>
+<svg class="icon icon-turn-on"><use xlink:href="img/sprite.svg#icon-turn-on"></use></svg>
+</a> </div>
+        </div>
+        <a href="#" id="touch-menu">
+          <div id="nav-icon1"> <span></span> <span></span> <span></span> </div>
+        </a>
+      </header>
+      <!-- end header -->
+      <div class="tablepage">
+        <!-- begin main  -->
+        <main class="main">
+          <nav class="main__navbar">
+            <ul class="menu menu__list">
+              <!-- menu item -->
+              <li class="menu__item"> <a href="#" class="menu__icon">
+                  
+<svg class="icon icon-projects"><use xlink:href="img/sprite.svg#icon-projects"></use></svg>
+
+              </a>
+                <div class="secondmenu"> <a href="#" class="secondmenu__title">
+              <span>Projects</span>
+            </a>
+                  <ul class="secondmenu__list">
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">In Progress</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Sent to Estimator</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Proposal sent</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Contract in Progress</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Contract signed</a> </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- menu item -->
+              <li class="menu__item"> <a href="#" class="menu__icon">
+                    
+<svg class="icon icon-pencil"><use xlink:href="img/sprite.svg#icon-pencil"></use></svg>
+
+              </a>
+                <div class="secondmenu"> <a href="#" class="secondmenu__title">
+              <span>Proposal Manager</span>
+            </a>
+                  <ul class="secondmenu__list">
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">In Progress</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Sent to Estimator</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Proposal sent</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Contract in Progress</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Contract signed</a> </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- menu item -->
+              <li class="menu__item"> <a href="#" class="menu__icon">
+                      
+<svg class="icon icon-reports"><use xlink:href="img/sprite.svg#icon-reports"></use></svg>
+
+                  </a>
+                <div class="secondmenu"> <a href="#" class="secondmenu__title">
+              <span>Reports Dashboards</span>
+            </a>
+                  <ul class="secondmenu__list">
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">In Progress</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Sent to Estimator</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Proposal sent</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Contract in Progress</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Contract signed</a> </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- menu item -->
+              <li class="menu__item"> <a href="#" class="menu__icon">
+                        
+<svg class="icon icon-agenda"><use xlink:href="img/sprite.svg#icon-agenda"></use></svg>
+
+                    </a>
+                <div class="secondmenu"> <a href="#" class="secondmenu__title">
+              <span>Agenda</span>
+            </a>
+                  <ul class="secondmenu__list">
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">In Progress</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Sent to Estimator</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Proposal sent</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Contract in Progress</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Contract signed</a> </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- menu item -->
+              <li class="menu__item"> <a href="#" class="menu__icon">
+                        
+<svg class="icon icon-maps"><use xlink:href="img/sprite.svg#icon-maps"></use></svg>
+
+                    </a>
+                <div class="secondmenu"> <a href="#" class="secondmenu__title">
+              <span>Maps</span>
+            </a>
+                  <ul class="secondmenu__list">
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">In Progress</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Sent to Estimator</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Proposal sent</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Contract in Progress</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Contract signed</a> </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- menu item -->
+              <li class="menu__item"> <a href="#" class="menu__icon">
+                        
+<svg class="icon icon-schedule"><use xlink:href="img/sprite.svg#icon-schedule"></use></svg>
+
+                    </a>
+                <div class="secondmenu"> <a href="#" class="secondmenu__title">
+              <span>Schedule</span>
+            </a>
+                  <ul class="secondmenu__list">
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">In Progress</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Sent to Estimator</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Proposal sent</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Contract in Progress</a> </li>
+                    <li class="secondmenu__item"> <a href="#" class="secondmenu__link">Contract signed</a> </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <div class="secondmenu-bg"></div>
+          </nav>
+          <!-- main content -->
+          <div class="main__calendar">
+            <div class="calendar__head">
+              <div class="calendar__topnav"> <a href="#" role="button" class="calendar__back">
+            <span class="icon-back">
+<svg class="icon icon-close-thin"><use xlink:href="img/sprite.svg#icon-close-thin"></use></svg>
+</span>Back</a> <a href="#" role="button" class="calendar__hamburger">
+<svg class="icon icon-menu"><use xlink:href="img/sprite.svg#icon-menu"></use></svg>
+</a> </div>
+              <div class="calendar__carousel"> <span class="calendar-icon">
+<svg class="icon icon-calendar"><use xlink:href="img/sprite.svg#icon-calendar"></use></svg>
+</span>
+                <div class="calendar__date-wrap"> <span class="carousel__arrow" role="button">
+<svg class="icon icon-arrow-left2"><use xlink:href="img/sprite.svg#icon-arrow-left2"></use></svg>
+</span> <span class="calenar__date">01-15-2017</span> <span class="dash">—</span> <span class="calenar__date">01-22-2017</span> <span class="carousel__arrow" role="button">
+<svg class="icon icon-arrow-right2"><use xlink:href="img/sprite.svg#icon-arrow-right2"></use></svg>
+</span> </div>
+              </div>
+            </div>
+            <div class="calendar__body">
+              <!-- new row -->
+              <div class="calendar__row">
+                <h2 class="calendar__dayname">Sunday</h2>
+                <div class="calendar__day">
+                  <!-- new block -->
+                  <div class="calendar__block">
+                    <div class="calendar__header calendar__header--seablue">
+                      <h5 class="calendar__caption">Morning</h5> <span class="icon__clock">
+<svg class="icon icon-clock"><use xlink:href="img/sprite.svg#icon-clock"></use></svg>
+</span> </div>
+                    <div class="calendar__hours">
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">8 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">9 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">10 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">11 <span class="hours__am-pm">am</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- new block -->
+                  <div class="calendar__block">
+                    <div class="calendar__header calendar__header--seablue">
+                      <h5 class="calendar__caption">Morning</h5> <span class="icon__clock">
+<svg class="icon icon-clock"><use xlink:href="img/sprite.svg#icon-clock"></use></svg>
+</span> </div>
+                    <div class="calendar__hours">
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">8 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">9 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">10 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">11 <span class="hours__am-pm">am</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- new block -->
+                  <div class="calendar__block">
+                    <div class="calendar__header calendar__header--slategrey">
+                      <h5 class="calendar__caption">Morning</h5> <span class="icon__clock">
+<svg class="icon icon-clock"><use xlink:href="img/sprite.svg#icon-clock"></use></svg>
+</span> </div>
+                    <div class="calendar__hours">
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">8 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">9 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">10 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">11 <span class="hours__am-pm">am</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- new row -->
+              <div class="calendar__row">
+                <h2 class="calendar__dayname">Tuesday</h2>
+                <div class="calendar__day">
+                  <!-- new block -->
+                  <div class="calendar__block">
+                    <div class="calendar__header calendar__header--slategrey">
+                      <h5 class="calendar__caption">Morning</h5> <span class="icon__clock">
+<svg class="icon icon-clock"><use xlink:href="img/sprite.svg#icon-clock"></use></svg>
+</span> </div>
+                    <div class="calendar__hours">
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">8 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">9 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">10 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">11 <span class="hours__am-pm">am</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- new block -->
+                  <div class="calendar__block">
+                    <div class="calendar__header calendar__header--seablue">
+                      <h5 class="calendar__caption">Morning</h5> <span class="icon__clock">
+<svg class="icon icon-clock"><use xlink:href="img/sprite.svg#icon-clock"></use></svg>
+</span> </div>
+                    <div class="calendar__hours">
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">8 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">9 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">10 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">11 <span class="hours__am-pm">am</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- new block -->
+                  <div class="calendar__block">
+                    <div class="calendar__header calendar__header--seablue">
+                      <h5 class="calendar__caption">Morning</h5> <span class="icon__clock">
+<svg class="icon icon-clock"><use xlink:href="img/sprite.svg#icon-clock"></use></svg>
+</span> </div>
+                    <div class="calendar__hours">
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">8 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">9 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">10 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">11 <span class="hours__am-pm">am</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- new row -->
+              <div class="calendar__row">
+                <h2 class="calendar__dayname">Wednesday</h2>
+                <div class="calendar__day">
+                  <!-- new block -->
+                  <div class="calendar__block">
+                    <div class="calendar__header calendar__header--slategrey">
+                      <h5 class="calendar__caption">Morning</h5> <span class="icon__clock">
+<svg class="icon icon-clock"><use xlink:href="img/sprite.svg#icon-clock"></use></svg>
+</span> </div>
+                    <div class="calendar__hours">
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">8 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">9 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">10 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">11 <span class="hours__am-pm">am</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- new block -->
+                  <div class="calendar__block">
+                    <div class="calendar__header calendar__header--seablue">
+                      <h5 class="calendar__caption">Morning</h5> <span class="icon__clock">
+<svg class="icon icon-clock"><use xlink:href="img/sprite.svg#icon-clock"></use></svg>
+</span> </div>
+                    <div class="calendar__hours">
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">8 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">9 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">10 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">11 <span class="hours__am-pm">am</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- new block -->
+                  <div class="calendar__block">
+                    <div class="calendar__header calendar__header--seablue">
+                      <h5 class="calendar__caption">Morning</h5> <span class="icon__clock">
+<svg class="icon icon-clock"><use xlink:href="img/sprite.svg#icon-clock"></use></svg>
+</span> </div>
+                    <div class="calendar__hours">
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">8 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">9 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">10 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">11 <span class="hours__am-pm">am</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- new row -->
+              <div class="calendar__row">
+                <h2 class="calendar__dayname">Thursday</h2>
+                <div class="calendar__day">
+                  <!-- new block -->
+                  <div class="calendar__block">
+                    <div class="calendar__header calendar__header--seablue">
+                      <h5 class="calendar__caption">Morning</h5> <span class="icon__clock">
+<svg class="icon icon-clock"><use xlink:href="img/sprite.svg#icon-clock"></use></svg>
+</span> </div>
+                    <div class="calendar__hours">
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">8 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">9 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">10 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">11 <span class="hours__am-pm">am</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- new block -->
+                  <div class="calendar__block">
+                    <div class="calendar__header calendar__header--seablue">
+                      <h5 class="calendar__caption">Morning</h5> <span class="icon__clock">
+<svg class="icon icon-clock"><use xlink:href="img/sprite.svg#icon-clock"></use></svg>
+</span> </div>
+                    <div class="calendar__hours">
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">8 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">9 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">10 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">11 <span class="hours__am-pm">am</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- new block -->
+                  <div class="calendar__block">
+                    <div class="calendar__header calendar__header--seablue">
+                      <h5 class="calendar__caption">Morning</h5> <span class="icon__clock">
+<svg class="icon icon-clock"><use xlink:href="img/sprite.svg#icon-clock"></use></svg>
+</span> </div>
+                    <div class="calendar__hours">
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">8 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">9 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">10 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">11 <span class="hours__am-pm">am</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- new row -->
+              <div class="calendar__row">
+                <h2 class="calendar__dayname">Friday</h2>
+                <div class="calendar__day">
+                  <!-- new block -->
+                  <div class="calendar__block">
+                    <div class="calendar__header calendar__header--slategrey">
+                      <h5 class="calendar__caption">Morning</h5> <span class="icon__clock">
+<svg class="icon icon-clock"><use xlink:href="img/sprite.svg#icon-clock"></use></svg>
+</span> </div>
+                    <div class="calendar__hours">
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">8 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">9 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">10 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">11 <span class="hours__am-pm">am</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- new block -->
+                  <div class="calendar__block">
+                    <div class="calendar__header calendar__header--seablue">
+                      <h5 class="calendar__caption">Morning</h5> <span class="icon__clock">
+<svg class="icon icon-clock"><use xlink:href="img/sprite.svg#icon-clock"></use></svg>
+</span> </div>
+                    <div class="calendar__hours">
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">8 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">9 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">10 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">11 <span class="hours__am-pm">am</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- new block -->
+                  <div class="calendar__block">
+                    <div class="calendar__header calendar__header--seablue">
+                      <h5 class="calendar__caption">Morning</h5> <span class="icon__clock">
+<svg class="icon icon-clock"><use xlink:href="img/sprite.svg#icon-clock"></use></svg>
+</span> </div>
+                    <div class="calendar__hours">
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">8 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">9 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">10 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">11 <span class="hours__am-pm">am</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- new row -->
+              <div class="calendar__row">
+                <h2 class="calendar__dayname">Saturday</h2>
+                <div class="calendar__day">
+                  <!-- new block -->
+                  <div class="calendar__block">
+                    <div class="calendar__header calendar__header--slategrey">
+                      <h5 class="calendar__caption">Morning</h5> <span class="icon__clock">
+<svg class="icon icon-clock"><use xlink:href="img/sprite.svg#icon-clock"></use></svg>
+</span> </div>
+                    <div class="calendar__hours">
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">8 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">9 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">10 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">11 <span class="hours__am-pm">am</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- new block -->
+                  <div class="calendar__block">
+                    <div class="calendar__header calendar__header--seablue">
+                      <h5 class="calendar__caption">Morning</h5> <span class="icon__clock">
+<svg class="icon icon-clock"><use xlink:href="img/sprite.svg#icon-clock"></use></svg>
+</span> </div>
+                    <div class="calendar__hours">
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">8 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">9 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">10 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">11 <span class="hours__am-pm">am</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- new block -->
+                  <div class="calendar__block">
+                    <div class="calendar__header calendar__header--slategrey">
+                      <h5 class="calendar__caption">Morning</h5> <span class="icon__clock">
+<svg class="icon icon-clock"><use xlink:href="img/sprite.svg#icon-clock"></use></svg>
+</span> </div>
+                    <div class="calendar__hours">
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">8 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">9 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">10 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">11 <span class="hours__am-pm">am</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- new row -->
+              <div class="calendar__row">
+                <h2 class="calendar__dayname">Monday</h2>
+                <div class="calendar__day">
+                  <!-- new block -->
+                  <div class="calendar__block">
+                    <div class="calendar__header calendar__header--slategrey">
+                      <h5 class="calendar__caption">Morning</h5> <span class="icon__clock">
+<svg class="icon icon-clock"><use xlink:href="img/sprite.svg#icon-clock"></use></svg>
+</span> </div>
+                    <div class="calendar__hours">
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">8 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">9 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">10 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">11 <span class="hours__am-pm">am</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- new block -->
+                  <div class="calendar__block">
+                    <div class="calendar__header calendar__header--seablue">
+                      <h5 class="calendar__caption">Morning</h5> <span class="icon__clock">
+<svg class="icon icon-clock"><use xlink:href="img/sprite.svg#icon-clock"></use></svg>
+</span> </div>
+                    <div class="calendar__hours">
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">8 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">9 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">10 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">11 <span class="hours__am-pm">am</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- new block -->
+                  <div class="calendar__block">
+                    <div class="calendar__header calendar__header--seablue">
+                      <h5 class="calendar__caption">Morning</h5> <span class="icon__clock">
+<svg class="icon icon-clock"><use xlink:href="img/sprite.svg#icon-clock"></use></svg>
+</span> </div>
+                    <div class="calendar__hours">
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">8 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item"> <span class="check-icon check-icon--seablue">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">9 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">10 <span class="hours__am-pm">am</span></div>
+                      </div>
+                      <div class="hours__item hours__item--warmgrey"> <span class="check-icon">
+<svg class="icon icon-tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+</span>
+                        <div class="hours__time">11 <span class="hours__am-pm">am</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <!-- end main -->
+      </div>
+    </div>
+    <!-- END WRAPPER -->
+    <!-- BEGIN scripts -->
+    <script async src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script async src="js/app.js"></script>
+  </body>
+
+</html>
