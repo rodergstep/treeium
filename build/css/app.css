@@ -2304,6 +2304,8 @@ Modal: New Message
   .main__proposal #navbarCloned {
     display: -ms-flexbox !important;
     display: flex !important;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .main__proposal .top__btn {
     display: -ms-flexbox;
@@ -3474,6 +3476,9 @@ Modal: New Message
   .main__proposal .page__section--photos .photos__item {
     -ms-flex-preferred-size: 48%;
     flex-basis: 48%;
+  }
+  .main__proposal .page__section--photos .photos__item:nth-child(n+7) {
+    display: none;
   }
 }
 
