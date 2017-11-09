@@ -28,6 +28,10 @@
     <div class="wrapper">
       <style>
         .preloader {
+          display: none!important;
+        }
+
+        .parovoziker {
           height: 100%;
           width: 100%;
           background: rgba(34, 34, 34, 0.8);
@@ -56,7 +60,7 @@
           animation: spin 1s infinite linear;
         }
 
-        .b-ico-preloader:after {
+        .b-ico-parovoziker:after {
           content: "loading";
           position: absolute;
           bottom: -45px;
@@ -68,11 +72,11 @@
           color: #8d8d8d;
         }
 
-        .preloader.fade {
+        .parovoziker.fade {
           opacity: 0;
         }
 
-        .b-ico-preloader {
+        .b-ico-parovoziker {
           background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAAsSAAALEgHS3X78AAACJUlEQVRYR72Wu0oDQRiF8wgp7cwj+ACCaQVBwUJBI/EuiiYqgp2prO0NEgQx5mJi7jFqLmJlEXsFrbSMVRrBdf51N27WnT2zu8biDAOZOeeb+Wcm6zqvLIUz1fW3VGU5lSgvBCVJcv2nXBRavtuVVBVvdz5/gOYnkIFTuShEC6BXobH9kb5ebfYKRm7MAHoNIze5erCNwo1gqEzx0mw/CoEAFzdrTyjQTDQ/XpobRGFcgNTVSg2FiChbC7SsgsiN/iY4lZUdkRuqIzK1KrrOdEaEAEh0qJCpHX2XhX9QOx16fJCZXdHieFe306HtQkZORCUxguh00Iv4F8rVN9v6cnTRECUycSp6SbkAZwXfPYOAJk6lLUUXQDg2HDpKjEjsLxqaOBHdDB7AAJNEiiRHewqifnv8uhYsvKVCIBA6VLSd7PdDdo1frZwhuvY8gIgWQBWVJlb0S/nGVpeRfn7ycnGfPcWPCIbO2mluqs8IYMwIQKuTzKS8K2Ri9m1AO5OtbrS0wbQAdtjlBVGW4UR9Gcx0nB4P8ABURfO+mWh++oXKqZsf4gEYloGjEALQ+AZEAbwCwapqKFjn7YcAysBngXBZKNTAO6TM9YuSInlRKGeBbpFBKFzeShTIEwKAV1LRAwqyBaBApAQASB7kZRfAzdQUADhAXrYANBBoJ95pHPKyBaABoYfE7JWMIA9HAAqEWwHhlcUSBBwgADOkAO0por4HzVX1BREcvUqopLupAAAAAElFTkSuQmCC);
           background-size: cover;
           width: 25px;
@@ -83,7 +87,6 @@
           left: 0;
           right: 0;
           margin: auto;
-          animation: ico 5s infinite linear;
         }
 
         @keyframes spin {
@@ -97,16 +100,16 @@
 
       </style>
       <script>
-        var preload = document.createElement('div');
-        preload.className = "preloader";
-        preload.innerHTML = '<div class="b-ico-preloader"></div><div class="spinner"></div>';
-        document.body.appendChild(preload);
+        var parovozik = document.createElement('div');
+        parovozik.className = "parovoziker";
+        parovozik.innerHTML = '<div class="b-ico-parovoziker"></div><div class="spinner"></div>';
+        document.body.appendChild(parovozik);
         window.addEventListener('load', function()
         {
-          // Uncomment to fade preloader after document load
-          // preload.className += ' fade';
+          // Uncomment to fade parovoziker after document load
+          // parovozik.className += ' fade';
           // setTimeout(function() {
-          //   preload.style.display = 'none';
+          //   parovozik.style.display = 'none';
           // }, 600);
         })
 
