@@ -4848,59 +4848,30 @@ Modal: New Message
   opacity: 1;
 }
 
-.spinner {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  border: 2px solid #6a6a6a;
-  border-top: 2px solid #9caa49;
-  border-radius: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  animation: spin 1s infinite linear;
-}
-
-.b-ico-preloader:after {
-  content: "loading";
-  position: absolute;
-  bottom: -45px;
-  left: -12px;
-  font-family: Hind, Arial, sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 1.3px;
-  color: #8d8d8d;
-}
-
 .preloader.fade {
   opacity: 0;
 }
 
-.b-ico-preloader {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAAsSAAALEgHS3X78AAACJUlEQVRYR72Wu0oDQRiF8wgp7cwj+ACCaQVBwUJBI/EuiiYqgp2prO0NEgQx5mJi7jFqLmJlEXsFrbSMVRrBdf51N27WnT2zu8biDAOZOeeb+Wcm6zqvLIUz1fW3VGU5lSgvBCVJcv2nXBRavtuVVBVvdz5/gOYnkIFTuShEC6BXobH9kb5ebfYKRm7MAHoNIze5erCNwo1gqEzx0mw/CoEAFzdrTyjQTDQ/XpobRGFcgNTVSg2FiChbC7SsgsiN/iY4lZUdkRuqIzK1KrrOdEaEAEh0qJCpHX2XhX9QOx16fJCZXdHieFe306HtQkZORCUxguh00Iv4F8rVN9v6cnTRECUycSp6SbkAZwXfPYOAJk6lLUUXQDg2HDpKjEjsLxqaOBHdDB7AAJNEiiRHewqifnv8uhYsvKVCIBA6VLSd7PdDdo1frZwhuvY8gIgWQBWVJlb0S/nGVpeRfn7ycnGfPcWPCIbO2mluqs8IYMwIQKuTzKS8K2Ri9m1AO5OtbrS0wbQAdtjlBVGW4UR9Gcx0nB4P8ABURfO+mWh++oXKqZsf4gEYloGjEALQ+AZEAbwCwapqKFjn7YcAysBngXBZKNTAO6TM9YuSInlRKGeBbpFBKFzeShTIEwKAV1LRAwqyBaBApAQASB7kZRfAzdQUADhAXrYANBBoJ95pHPKyBaABoYfE7JWMIA9HAAqEWwHhlcUSBBwgADOkAO0por4HzVX1BREcvUqopLupAAAAAElFTkSuQmCC);
-  background-size: cover;
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  animation: ico 5s infinite linear;
+.scene {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  perspective: 600;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.scene svg {
+  width: 80px;
+  height: 100px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAAsSAAALEgHS3X78AAACJUlEQVRYR72Wu0oDQRiF8wgp7cwj+ACCaQVBwUJBI/EuiiYqgp2prO0NEgQx5mJi7jFqLmJlEXsFrbSMVRrBdf51N27WnT2zu8biDAOZOeeb+Wcm6zqvLIUz1fW3VGU5lSgvBCVJcv2nXBRavtuVVBVvdz5/gOYnkIFTuShEC6BXobH9kb5ebfYKRm7MAHoNIze5erCNwo1gqEzx0mw/CoEAFzdrTyjQTDQ/XpobRGFcgNTVSg2FiChbC7SsgsiN/iY4lZUdkRuqIzK1KrrOdEaEAEh0qJCpHX2XhX9QOx16fJCZXdHieFe306HtQkZORCUxguh00Iv4F8rVN9v6cnTRECUycSp6SbkAZwXfPYOAJk6lLUUXQDg2HDpKjEjsLxqaOBHdDB7AAJNEiiRHewqifnv8uhYsvKVCIBA6VLSd7PdDdo1frZwhuvY8gIgWQBWVJlb0S/nGVpeRfn7ycnGfPcWPCIbO2mluqs8IYMwIQKuTzKS8K2Ri9m1AO5OtbrS0wbQAdtjlBVGW4UR9Gcx0nB4P8ABURfO+mWh++oXKqZsf4gEYloGjEALQ+AZEAbwCwapqKFjn7YcAysBngXBZKNTAO6TM9YuSInlRKGeBbpFBKFzeShTIEwKAV1LRAwqyBaBApAQASB7kZRfAzdQUADhAXrYANBBoJ95pHPKyBaABoYfE7JWMIA9HAAqEWwHhlcUSBBwgADOkAO0por4HzVX1BREcvUqopLupAAAAAElFTkSuQmCC);
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-position: center 40%;
 }
 
 /*# sourceMappingURL=app.css.map */
