@@ -181,6 +181,12 @@ a:hover {
   fill: initial;
 }
 
+.icon-arrow-last {
+  width: 1.09em;
+  height: 1em;
+  fill: initial;
+}
+
 .icon-arrow-left {
   width: 0.89em;
   height: 1em;
@@ -189,6 +195,12 @@ a:hover {
 
 .icon-arrow-left2 {
   width: 0.49em;
+  height: 1em;
+  fill: initial;
+}
+
+.icon-arrow-redo {
+  width: 1em;
   height: 1em;
   fill: initial;
 }
@@ -289,6 +301,12 @@ a:hover {
   fill: initial;
 }
 
+.icon-calendar2 {
+  width: 1.08em;
+  height: 1em;
+  fill: initial;
+}
+
 .icon-calls-big {
   width: 0.89em;
   height: 1em;
@@ -297,6 +315,12 @@ a:hover {
 
 .icon-calls {
   width: 0.86em;
+  height: 1em;
+  fill: initial;
+}
+
+.icon-check-opened {
+  width: 1.44em;
   height: 1em;
   fill: initial;
 }
@@ -343,6 +367,12 @@ a:hover {
   fill: initial;
 }
 
+.icon-contract--grey {
+  width: 0.87em;
+  height: 1em;
+  fill: initial;
+}
+
 .icon-contract {
   width: 0.83em;
   height: 1em;
@@ -362,7 +392,7 @@ a:hover {
 }
 
 .icon-download {
-  width: 0.79em;
+  width: 0.74em;
   height: 1em;
   fill: initial;
 }
@@ -1193,7 +1223,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   height: 44px;
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease;
 }
 
 .menu__item:hover {
@@ -2372,12 +2402,26 @@ Modal: New Message
   height: 16px;
 }
 
+.main__proposal .icon-contract--grey {
+  width: 12px;
+  height: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main__proposal .icon-contract--grey {
+    display: none;
+  }
+}
+
 .main__proposal .icon-actions {
   width: 15px;
   height: 17px;
 }
 
 @media only screen and (max-width: 768px) {
+  .main__proposal .icon-contract2 {
+    display: none;
+  }
   .main__proposal .btn-actions {
     display: -ms-flexbox;
     display: flex;
@@ -2401,6 +2445,9 @@ Modal: New Message
   }
   .main__proposal #navbarCloned {
     top: 60px;
+  }
+  .main__proposal #navbarCloned .navitem__icon .icon {
+    fill: #999999;
   }
 }
 
@@ -2948,6 +2995,72 @@ Modal: New Message
   outline-color: #e4e7d1;
 }
 
+.main__proposal .profile__stats {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-top: 10px;
+  padding: 13px 15px;
+  background-color: #cfd8dc;
+}
+
+@media only screen and (max-width: 480px) {
+  .main__proposal .profile__stats {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .main__proposal .profile__stats .stats__item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+}
+
+.main__proposal .profile__stats .icon-calendar2 {
+  width: 13px;
+  height: 12px;
+}
+
+.main__proposal .profile__stats .icon-arrow-last {
+  width: 12px;
+  height: 11px;
+}
+
+.main__proposal .profile__stats .icon-check-opened {
+  width: 13px;
+  height: 9px;
+}
+
+.main__proposal .profile__stats .stats__caption {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #3a3c44;
+}
+
+.main__proposal .profile__stats .stats__icon {
+  width: 19px;
+  fill: #43454d;
+}
+
+.main__proposal .profile__stats .stats__value {
+  margin-top: 10px;
+  margin-left: 19px;
+  font-family: "Hind", Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #5a5f67;
+}
+
 .main__proposal .profile__submit {
   display: -ms-flexbox;
   display: flex;
@@ -2956,7 +3069,7 @@ Modal: New Message
   -ms-flex-align: center;
   align-items: center;
   max-width: 96px;
-  margin-top: 10px;
+  margin-top: 20px;
   min-height: 38px;
   font-size: 13px;
   color: #fff;
@@ -2985,10 +3098,91 @@ Modal: New Message
 }
 
 .main__proposal .section--map {
+  position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.main__proposal .map__stats {
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 20px 20px 20px 25px;
+  background-color: #eeeeee;
+}
+
+.main__proposal .map__stats .stats__item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  color: #5a5f67;
+  font-weight: 600;
+}
+
+.main__proposal .map__stats .stats__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.main__proposal .map__stats .stats__caption {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+
+.main__proposal .map__stats .stats__caption .icon {
+  font-size: 20px;
+  fill: #8db23a;
+}
+
+.main__proposal .map__stats .stats__icon {
+  margin-right: 10px;
+}
+
+.main__proposal .map__stats .stats__icon-circle {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid #8db23a;
+  border-radius: 50%;
+}
+
+.main__proposal .map__stats .icon-check {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 480px) {
+  .main__proposal .map__stats {
+    font-size: 12px;
+  }
+  .main__proposal .map__stats .stats__caption .icon {
+    font-size: 14px;
+  }
+  .main__proposal .map__stats .stats__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .main__proposal .map__stats .stats__icon-circle {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .main__proposal .map__stats {
+    padding: 10px;
+  }
 }
 
 .main__proposal .map__head {
@@ -3116,6 +3310,9 @@ Modal: New Message
   .main__proposal .page__section--activities .page__navbar {
     padding-left: 0;
     margin-bottom: 0;
+  }
+  .main__proposal .page__section--activities .page__navbar .navitem__icon .icon {
+    fill: #888888;
   }
 }
 
