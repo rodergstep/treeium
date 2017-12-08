@@ -2707,8 +2707,11 @@ Modal: New Message
   display: flex;
   width: 100%;
   height: 7px;
-  margin-bottom: 30px;
   background-color: #e4e7d1;
+}
+
+.main__proposal .progress:hover {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
@@ -3889,6 +3892,58 @@ Modal: New Message
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.proposal-modal {
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 30px 10px;
+  background-color: #fff;
+  color: #454545;
+  border-radius: 3px;
+}
+
+.proposal-modal .mfp-close-btn-in .mfp-close {
+  color: #c2c2c2;
+}
+
+.proposal-modal .mfp-close {
+  right: -5px;
+  top: -5px;
+  font-size: 20px;
+  transition: all 0.2s ease;
+}
+
+.proposal-modal .modal__question {
+  text-align: center;
+  font-size: 18px;
+}
+
+.proposal-modal .modal__answers {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.proposal-modal .modal__answers-btn {
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 100px;
+  padding: 8px 20px 6px;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #249af4;
+  border-radius: 3px;
+}
+
+.proposal-modal .modal__answers-btn:hover {
+  cursor: pointer;
+  background-color: #0c8ff2;
 }
 
 /****************
